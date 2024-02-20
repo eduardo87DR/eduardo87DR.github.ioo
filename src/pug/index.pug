@@ -8,7 +8,7 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Grayscale - Start Bootstrap Theme
+        title Mi Portafolio
 
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
 
@@ -27,169 +27,139 @@ html(lang='en')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
             .container.px-4.px-lg-5
-                a.navbar-brand(href='#page-top') Start Bootstrap
+                a.navbar-brand(href='#page-top') Mi portafolio
                 button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu
                     i.fas.fa-bars
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ms-auto
                         li.nav-item
-                            a.nav-link(href='#about') About
+                            a.nav-link(href='#about') Sobre mí
                         li.nav-item
-                            a.nav-link(href='#projects') Projects
+                            a.nav-link(href='#projects') Proyectos
                         li.nav-item
-                            a.nav-link(href='#signup') Contact
+                            a.nav-link(href='#contact-section') Contáctame
 
         // Masthead
         header.masthead
             .container.px-4.px-lg-5.d-flex.h-100.align-items-center.justify-content-center
                 .d-flex.justify-content-center
                     .text-center
-                        h1.mx-auto.my-0.text-uppercase Grayscale
-                        h2.text-white-50.mx-auto.mt-2.mb-5 A free, responsive, one page Bootstrap theme created by Start Bootstrap.
-                        a.btn.btn-primary(href='#about') Get Started
+                        h1.mx-auto.my-0.text-uppercase(style='font-size: 3em;') Eduardo Yael Malpica Cristobal
+                        h2.text-white-50.mx-auto.mt-2.mb-5 Soy estudiante de desarrollo de software multiplataforma
+                        a.btn.btn-primary(href='#about') Ver información
 
         // About
         section#about.about-section.text-center
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5.justify-content-center
                     .col-lg-8
-                        h2.text-white.mb-4 Built with Bootstrap 5
+                        h2.text-white.mb-4 Sobre mí
                         p.text-white-50
-                            | Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on 
-                            a(href='https://startbootstrap.com/theme/grayscale/') the preview page.
-                            | The theme is open source, and you can use it for any purpose, personal or commercial.
-                img.img-fluid(src='assets/img/ipad.png', alt='...')
+                            |En mi formación académica, estudié la preparatoria en el Colegio de Bachilleres Plantel Cancún 2, donde tuve una capacitación en Tecnologías de la información y la comunicación y aprendí lo básico en cuanto a programación y lenguaje HTML. 
+                        p.text-white-50  
+                            |Actualmente estoy cursando el TSU en la Universidad Tecnológica de Cancún, donde me especializo en desarrollo de software multiplataforma. Mi plan de estudios abarca materias teóricas y prácticas que van desde la lógica de programación hasta el diseño y desarrollo de aplicaciones web y móviles, así como la administración de bases de datos. Además, estoy adquiriendo habilidades en programación orientada a objetos, sistemas operativos y aplicaciones en la nube. También estoy enfocado en mejorar mis habilidades comunicativas en inglés y en obtener una formación sociocultural integral para enfrentar los desafíos del entorno laboral global.
+                        .row.mb-4
+                    .col-sm-6
+                        h3.text-white Habilidades Técnicas
+                        ul.text-white-50
+                            li JavaScript
+                            li MySQL
+                            li HTML/CSS
+                            li Express.js
+                            li React Native
+                            li Node.js    
+                    .col-sm-6
+                        h3.text-white Habilidades Blandas
+                        ul.text-white-50
+                            li Trabajo en equipo
+                            li Observación detallada
+                            li Comunicación efectiva
+                            li Pensamiento crítico
+                            li Responsabilidad
+                            li Creatividad
+                         
+                img.img-fluid(src='assets/img/code.jpeg', alt='...')
 
         // Projects
         section#projects.projects-section.bg-light
+            h2.text-center.text-uppercase.mb-4 Mis Proyectos
             .container.px-4.px-lg-5
-                // Featured Project Row
-                .row.gx-0.mb-4.mb-lg-5.align-items-center
-                    .col-xl-8.col-lg-7
-                        img.img-fluid.mb-3.mb-lg-0(src='assets/img/bg-masthead.jpg', alt='...')
-                    .col-xl-4.col-lg-5
-                        .featured-text.text-center.text-lg-left
-                            h4 Shoreline
-                            p.text-black-50.mb-0
-                                | Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!
                 // Project One Row
-                .row.gx-0.mb-5.mb-lg-0.justify-content-center
-                    .col-lg-6
-                        img.img-fluid(src='assets/img/demo-image-01.jpg', alt='...')
+                .row.gx-0.justify-content-center
+                    .col-lg-6.order-lg-last 
+                       img.img-fluid(src='assets/img/quesos.png', alt='...') 
                     .col-lg-6
                         .bg-black.text-center.h-100.project
                             .d-flex.h-100
                                 .project-text.w-100.my-auto.text-center.text-lg-left
-                                    h4.text-white Misty
+                                    h4.text-white Plataforma de Gestión para Producción de Quesos Artesanales 
                                     p.mb-0.text-white-50
-                                        | An example of where you can put an image of a project, or anything else, along with a description.
+                                        | El sistema se centra en la creación y gestión de lotes de quesos artesanales a través de un dashboard intuitivo. Permite agregar, editar, mover, borrar e inspeccionar lotes, además de incluir vista de usuarios y recetas detalladas para garantizar la calidad del producto. El objetivo principal es optimizar la calidad y controlar el inventario de los quesos artesanales de manera eficiente.
+                                    p.mb-0.text-white-50
+                                        | Tecnologías utilizadas: JavaScript, TailwindCSS, React y Express.js
+
                 // Project Two Row
+                .row.gx-0.mb-5.mb-lg-0.justify-content-center
+                    .col-lg-6
+                        img.img-fluid(src='assets/img/taller.png', alt='...')
+                    .col-lg-6
+                        .bg-black.text-center.h-100.project
+                            .d-flex.h-100
+                                .project-text.w-100.my-auto.text-center.text-lg-left
+                                    h4.text-white Sistema Gestor de trabajos de Mecánicos
+                                    p.mb-0.text-white-50
+                                        | Plataforma de gestión eficiente para talleres mecánicos, diseñada para facilitar la organización y supervisión de trabajos y personal. Este sistema permite agregar, asignar y monitorear el progreso de cada tarea, utilizando operaciones de creación y edición de trabajos. Se ha priorizado la seguridad mediante cifrado de datos, conexión HTTPS, autenticación multifactor y control de acceso basado en roles. 
+                                    p.mb-0.text-white-50
+                                        | Tecnologías utilizadas: JavaScript, BootstrapCSS, Tailwind, React, HTML5, HTTPS y Express.js.
+                // Project Three Row
                 .row.gx-0.justify-content-center
                     .col-lg-6
-                        img.img-fluid(src='assets/img/demo-image-02.jpg', alt='...')
+                        img.img-fluid(src='assets/img/mente.png', alt='...')
                     .col-lg-6.order-lg-first
                         .bg-black.text-center.h-100.project
                             .d-flex.h-100
                                 .project-text.w-100.my-auto.text-center.text-lg-right
-                                    h4.text-white Mountains
+                                    h4.text-white Aplicación web de e-commerce Pediátrico
                                     p.mb-0.text-white-50
-                                        | Another example of a project with its respective description. These sections work well responsively as well!
-
-        // Signup
-        section#signup.signup-section
-            .container.px-4.px-lg-5
-                .row.gx-4.gx-lg-5
-                    .col-md-10.col-lg-8.mx-auto.text-center
-                        i.far.fa-paper-plane.fa-2x.mb-2.text-white
-                        h2.text-white.mb-5 Subscribe to receive updates!
-
-                        // * * * * * * * * * * * * * * *
-                        // * * SB Forms Contact Form * *
-                        // * * * * * * * * * * * * * * *
-
-                        // This form is pre-integrated with SB Forms.
-                        // To make this form functional, sign up at
-                        // https://startbootstrap.com/solution/contact-forms
-                        // to get an API token!
-                        
-                        form#contactForm.form-signup(data-sb-form-api-token='API_TOKEN')
-
-                            // Email address input
-
-                            .row.input-group-newsletter
-                                .col
-                                    input#emailAddress.form-control(
-                                        type='email',
-                                        placeholder='Enter email address...',
-                                        aria-label='Enter email address...',
-                                        data-sb-validations='required,email'
-                                    )
-                                .col-auto
-                                    button#submitButton.btn.btn-primary.disabled(type='submit') Notify Me!
-                            .invalid-feedback.mt-2(data-sb-feedback='emailAddress:required')
-                                | An email is required.
-                            .invalid-feedback.mt-2(data-sb-feedback='emailAddress:email')
-                                | Email is not valid.
-
-                            // Submit success message
-                            //
-                            // This is what your users will see when the form
-                            // has successfully submitted
-
-                            #submitSuccessMessage.d-none
-                                .text-center.mb-3.mt-2.text-white
-                                    .fw-bolder Form submission successful!
-                                    | To activate this form, sign up at
-                                    br
-                                    a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
-
-                            // Submit error message
-                            //
-                            // This is what your users will see when there is
-                            // an error submitting the form
-
-                            #submitErrorMessage.d-none
-                                .text-center.text-danger.mb-3.mt-2 Error sending message!
-
+                                        | Este proyecto es un e-commerce especializado en la venta de productos terapéuticos y pediátricos. Ofrecemos una amplia variedad de artículos divididos en categorías seleccionables para facilitar la navegación del usuario, incluyendo un motor de búsqueda. Además, nuestra plataforma cuenta con distintas secciones donde los usuarios pueden explorar y encontrar los productos que necesitan.
+                                    p.mb-0.text-white-50
+                                        | Tecnologías utilizadas: Javascript, React, Vite, Tailwind CSS, Bootstrap.
+        
         // Contact
-        section.contact-section.bg-black
-            .container.px-4.px-lg-5
+        section#contact-section.bg-black
+            .container.contact-container.px-4.px-lg-5
+                h2.text-white.text-center.mb-4 Contáctame
                 .row.gx-4.gx-lg-5
                     .col-md-4.mb-3.mb-md-0
                         .card.py-4.h-100
                             .card-body.text-center
                                 i.fas.fa-map-marked-alt.text-primary.mb-2
-                                h4.text-uppercase.m-0 Address
+                                h4.text-uppercase.m-0 Dirección
                                 hr.my-4.mx-auto
-                                .small.text-black-50 4923 Market Street, Orlando FL
+                                .small.text-black-50 Cancún, Q.Roo, México.
+
                     .col-md-4.mb-3.mb-md-0
                         .card.py-4.h-100
                             .card-body.text-center
-                                i.fas.fa-envelope.text-primary.mb-2
-                                h4.text-uppercase.m-0 Email
+                                i.fab.fa-github.text-primary.mb-2
+                                h4.text-uppercase.m-0 Github
                                 hr.my-4.mx-auto
                                 .small.text-black-50
-                                    a(href='#!') hello@yourdomain.com
+                                    a(href='https://github.com/eduardo87DR', target='_blank') https://github.com/eduardo87DR
                     .col-md-4.mb-3.mb-md-0
                         .card.py-4.h-100
                             .card-body.text-center
-                                i.fas.fa-mobile-alt.text-primary.mb-2
-                                h4.text-uppercase.m-0 Phone
+                                i.fab.fa-linkedin.text-primary.mb-2
+                                h4.text-uppercase.m-0 LinkedIn
                                 hr.my-4.mx-auto
-                                .small.text-black-50 +1 (555) 902-8832
-                .social.d-flex.justify-content-center
-                    a.mx-2(href='#!')
-                        i.fab.fa-twitter
-                    a.mx-2(href='#!')
-                        i.fab.fa-facebook-f
-                    a.mx-2(href='#!')
-                        i.fab.fa-github
-
+                                .small.text-black-50 
+                                    a(href='https://www.linkedin.com/in/eduardo-malpica-5806a82b4/', target='_blank') https://www.linkedin.com/in/eduardo-malpica-5806a82b4/
+                
         // Footer
         footer.footer.bg-black.small.text-center.text-white-50
             .container.px-4.px-lg-5
-                | Copyright &copy; Your Website 2023
+                | Copyright &copy; eduardo87DR 2024
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
